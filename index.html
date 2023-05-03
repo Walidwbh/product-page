@@ -41,6 +41,36 @@
             </div>
         </div>
     </header>
+    <section class="page">
+        <div class="container flex-between g-100 pt-50">
+            <div class="images flex-between g-20 display-none-mobile">
+                <img id="selected-img" src="assets/image-product-1.jpg">
+                <ul class="image-list flex-around">
+                    <li class="active"><img src="assets/image-product-1.jpg"></li>
+                    <li><img src="assets/image-product-2.jpg"></li>
+                    <li><img src="assets/image-product-3.jpg"></li>
+                    <li><img src="assets/image-product-4.jpg"></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h4 class="c-orange mb-20">SNEAKER COMPANY</h4>
+                <h1 class="rem-3 mb-20">Fall Limited Edition Sneakers</h1>
+                <p class="c-grayish mb-20">The low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                <div class="flex-mobile">
+                    <h2 class="price mb-20">$125.00<span class="fs-14">50%</span></h2>
+                    <h4 class="old-price c-grayish mb-20">$250.00</h4>
+                </div>
+                <div class="flex g-20 flex-column-mobile">
+                    <div class="quantity flex ">
+                        <img id="minus" src="assets/icon-minus.svg" alt="minus">
+                        <input type="number" id="number" value="0">
+                        <img id="plus" src="assets/icon-plus.svg" alt="plus">
+                    </div>
+                    <button class="flex-center g-10"><img src="assets/icon-cart.svg" alt="cart"> Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- js -->
     <script src="js/main.js"></script>
 </body>
