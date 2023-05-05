@@ -5,6 +5,7 @@
     --n-dark-grayish-blue: hsl(219, 9%, 45%);
     --n-grayish-blue: hsl(220, 14%, 75%);
     --main-transition: 0.6s;
+    --swiper-theme-color: black;
 }
 *,
 *::before,
@@ -64,9 +65,6 @@ input[type=number] {
 }
 /* end global components */
 /* navbar */
-header {
-    /* position: relative; */
-}
 header .container {
     padding: 40px 0;
     border-bottom: 1px solid var(--n-grayish-blue)
@@ -142,6 +140,9 @@ header .container .cart.active {
     z-index: 2;
 }
 /* page section */
+.page .swiper-mobile {
+    display: none;
+}
 .page .container .images {
     flex-direction: column;
 }
@@ -243,7 +244,7 @@ header .container .cart.active {
         height: 100%;
         padding: 40px;
         transition: var(--main-transition);
-        z-index: 1;
+        z-index: 2;
     }
     header .container .nav.active {
         left: 0;
@@ -263,6 +264,19 @@ header .container .cart.active {
     header .container .nav .close {
         display: unset;
         margin-bottom: 50px;
+    }
+    /* page */
+    .page .container {
+        gap: 50px;
+    }
+    .page .swiper-mobile {
+        display: unset;
+        margin-left: unset;
+        margin-right: unset;
+        width: 100%;
+    }
+    .page .swiper-mobile img {
+        width: 100%;
     }
     .page .content .quantity {
         width: 100%;

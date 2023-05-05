@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- main styles -->
     <link rel="stylesheet" href="css/global-styles.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -42,7 +44,22 @@
         </div>
     </header>
     <section class="page">
-        <div class="container flex-between g-100 pt-50">
+        <div class="container flex-between g-100 pt-50 pb-50">
+            <div class="swiper swiper-mobile">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/image-product-1.jpg"></div>
+                <div class="swiper-slide"><img src="assets/image-product-2.jpg"></div>
+                <div class="swiper-slide"><img src="assets/image-product-3.jpg"></div>
+                <div class="swiper-slide"><img src="assets/image-product-4.jpg"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
             <div class="images flex-between g-20 display-none-mobile">
                 <img id="selected-img" src="assets/image-product-1.jpg">
                 <ul class="image-list flex-around">
@@ -71,6 +88,8 @@
             </div>
         </div>
     </section>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- js -->
     <script src="js/main.js"></script>
 </body>
